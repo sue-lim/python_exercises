@@ -26,20 +26,23 @@ for line in file_handle:
         dictionary[item] = (
             dictionary.get(item, 0) + 1
         )  # adding the values in the list to dictionary
-    # print(dictionary)
+# print(dictionary)
 
-most_common_count = None
-most_common_email = None
+"""ref: https://stackoverflow.com/questions/30208044/how-to-add-list-elements-into-dictionary"""
 
-# Loop through the dictionary of word counts
-for email, count in dictionary.items():
-    # Check if this word has a higher count than the current highest count
-    if most_common_count is None or count > most_common_count:
-        # If yes, update the most frequent word and its count
-        most_common_email = email
-        most_common_count = count
 
-# Print the most frequent word and its count
-print(most_common_email, most_common_count)
+# most_common_count = None
+# most_common_email = None
+
+# # Loop through the dictionary of word counts
+# for email, count in dictionary.items():
+#     # Check if this word has a higher count than the current highest count
+#     if most_common_count is None or count > most_common_count:
+#         # If yes, update the most frequent word and its count
+#         most_common_email = email
+#         most_common_count = count
+
+# # Print the most frequent word and its count
+# print(most_common_email, most_common_count)
 
 # ref: https://stackoverflow.com/questions/30208044/how-to-add-list-elements-into-dictionary
